@@ -25,31 +25,34 @@ const Search = () => {
     setSearchQuery("");
   };
   return (
-    <div className="flex relative z-20">
+    <div className="flex relative items-center">
       <Link
-        className="me-3 text-white bg-gradient-to-r from-[#ff0a0a] to-[#ff7539] px-4 py-1 rounded-full "
+        className="me-3 text-white bg-gradient-to-r from-[#ED1F81] to-[#0C4DA1] px-4 py-1 rounded-full "
         to="/login"
       >
         Login
       </Link>
+
       {isSearching ? (
-        <div className="flex items-center ">
+        <div className="flex items-center">
           <input
-            className="outline-none border border-gray-400 "
+            className="outline-none border border-gray-400 absolute right-40"
             type="text"
             placeholder="Search..."
             value={searchQuery}
             onChange={handleInputChange}
           />
-
           <button>
-            <HiX onClick={handleCancelSearch} className="text-2xl"></HiX>
+            <HiX onClick={handleCancelSearch} className="text-2xl" />
           </button>
         </div>
       ) : (
         <div>
-          <span className="search-icon" onClick={handleSearchClick}>
-            <BiSearch className="text-2xl cursor-pointer"></BiSearch>
+          <span
+            className="search-icon cursor-pointer"
+            onClick={handleSearchClick}
+          >
+            <BiSearch className="text-2xl" />
           </span>
         </div>
       )}

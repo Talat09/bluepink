@@ -3,3 +3,12 @@
 .font-style {
   font-family: "Rubik", sans-serif;
 }
+/* Add this CSS to your Header.css or your global CSS */
+li.relative:hover div {
+  display: block;
+}
+
+li.relative div {
+  display: none;
+  /* Add styling for the hidden div here */
+}
