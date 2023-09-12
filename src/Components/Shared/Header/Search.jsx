@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch, BiCart } from "react-icons/bi";
 import { HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 const Search = () => {
   const [isSearching, setIsSearching] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -24,11 +25,17 @@ const Search = () => {
     setSearchQuery("");
   };
   return (
-    <div>
+    <div className="flex relative z-20">
+      <Link
+        className="me-3 text-white bg-gradient-to-r from-[#ff0a0a] to-[#ff7539] px-4 py-1 rounded-full "
+        to="/login"
+      >
+        Login
+      </Link>
       {isSearching ? (
-        <div className="flex items-center">
+        <div className="flex items-center ">
           <input
-            className="outline-none border border-gray-400"
+            className="outline-none border border-gray-400 "
             type="text"
             placeholder="Search..."
             value={searchQuery}
@@ -42,10 +49,14 @@ const Search = () => {
       ) : (
         <div>
           <span className="search-icon" onClick={handleSearchClick}>
-            <BiSearch className="text-2xl"></BiSearch>
+            <BiSearch className="text-2xl cursor-pointer"></BiSearch>
           </span>
         </div>
       )}
+
+      <Link className="ms-3 " to="/cart">
+        <BiCart className="text-2xl"></BiCart>
+      </Link>
     </div>
   );
 };
