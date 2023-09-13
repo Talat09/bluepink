@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Navbar, { menu } from "./Navbar";
 import Search from "./Search";
-import Logo from "./logo";
+
 import { HiBars4, HiXMark } from "react-icons/hi2";
+import Logo from "./Logo";
 const Header = () => {
   // State to track the visibility of the mobile menu
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Header = () => {
 
         {/* Conditionally render the mobile menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden md:hidden block absolute top-0 left-0 h-full bg-white z-20">
+          <div className="lg:hidden md:hidden block absolute top-0 left-0 h-[100vw] bg-white z-20">
             {/* Add your mobile menu content here */}
             <ul className=" h-full  bg-white text-black  w-40 shadow-md py-8 ">
               {menu}

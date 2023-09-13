@@ -1,3 +1,24 @@
+.carousel-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the opacity (last value) as needed */
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect for smooth visibility changes */
+}
+
+.overlay-visible {
+  opacity: 1; /* Make the overlay visible */
+}
+/* dfdf */
 .carousel {
   display: flex;
   flex-direction: column;
@@ -14,8 +35,8 @@
   opacity: 1;
 }
 .carousel-button {
-  /* background-color: #333; */
-  color: #fff;
+  background-color: white;
+  color: black;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -54,4 +75,12 @@
 
 .carousel-content img.active {
   display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
 }
