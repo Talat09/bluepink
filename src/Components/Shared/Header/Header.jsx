@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar, { menu } from "./Navbar";
 import Search from "./Search";
 import Logo from "./logo";
@@ -11,9 +11,29 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+  const [scrollDown, setScrollDown] = useState(false);
 
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      setScrollDown(true);
+    } else {
+      setScrollDown(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="shadow-md ">
+    <div
+      className={`fixed top-0 w-full z-50 bg-white ${
+        scrollDown ? "shadow-lg" : ""
+      }`}
+    >
       <div className="flex justify-between  items-center md:mx-32 h-28 mx-4 ">
         <Navbar></Navbar>
         <Logo></Logo>
@@ -30,9 +50,9 @@ const Header = () => {
 
         {/* Conditionally render the mobile menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden md:hidden block absolute top-0 left-0 h-full ">
+          <div className="lg:hidden md:hidden block absolute top-0 left-0 h-full bg-white z-20">
             {/* Add your mobile menu content here */}
-            <ul className=" h-full  bg-white text-black  w-40 shadow-md py-8">
+            <ul className=" h-full  bg-white text-black  w-40 shadow-md py-8 ">
               {menu}
             </ul>
           </div>
