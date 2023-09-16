@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "productName": "Millie XXS Swim",
+    "productCategory": "Category 1",
+    "hoverImage": "https://i.ibb.co/SdYW3pq/Retouch10-900x.webp",
+    "image": "https://i.ibb.co/9g06JcN/Van-Anh-XXS-540x.webp",
+    "price": "150.00"
+  },
+  {
+    "id": 2,
+    "productName": "Erika XXS Swim",
+    "productCategory": "Category 1",
+    "hoverImage": "https://i.ibb.co/Ltpg2VK/Thao-900x.webp",
+    "image": "https://i.ibb.co/G9FPQbQ/Erika-XXScopy-540x.webp",
+    "price": "110.00"
+  },
+  {
+    "id": 3,
+    "productName": "Thao XXS Swim",
+    "productCategory": "Category 2",
+    "hoverImage": "https://i.ibb.co/gyJMhLB/Boat-XXLBase-Edit-900x.webp",
+    "image": "https://i.ibb.co/C1PbGRH/Millie-XXScopy-900x.webp",
+    "price": "80.00"
+  },
+  {
+    "id": 4,
+    "productName": "Erika XXS Swim",
+    "productCategory": "Category 1",
+    "hoverImage": "https://i.ibb.co/Ltpg2VK/Thao-900x.webp",
+    "image": "https://i.ibb.co/JjhTyLr/Thao-XXScopy-900x.webp",
+    "price": "110.00"
+  }
+]

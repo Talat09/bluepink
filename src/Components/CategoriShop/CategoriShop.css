@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+.font-style {
+  font-family: "Rubik", sans-serif;
+}
+.image-container {
+  overflow: hidden;
+
+  transition: zoomIn 1s ease-in;
+}
+
+.image-container:hover img {
+  animation: zoomIn 1s ease-in;
+  /* transform: scale(1.2);  */
+  transform: scale(1.2);
+}
+
+/* Define a keyframe animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "Category": "XXL SCRUNCHIES",
+    "img": "https://i.ibb.co/Pt32mND/XXLBlack-Scrunchies-22-copy-360x.webp",
+    "products": [
+      {
+        "id": 1,
+        "productCategory": "Product 1",
+        "image": "https://example.com/product1.jpg",
+        "price": 100
+      },
+      {
+        "id": 2,
+        "productCategory": "Product 1",
+        "image": "https://example.com/product2.jpg",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "Category": "MINI SCRUNCHIES",
+    "img": "https://i.ibb.co/XC9cDLB/3-head2-360x.webp",
+    "products": [
+      {
+        "id": 3,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 4,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "Category": "XXS SCRUNCHIES",
+    "img": "https://i.ibb.co/ynVFz6f/xxs-clips-36-360x.webp",
+    "products": [
+      {
+        "id": 5,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 6,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "Category": "Scrunchie Holder",
+    "img": "https://i.ibb.co/tP7kQH1/1-main-shopify-photo-360x.webp",
+    "products": [
+      {
+        "id": 7,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 8,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "Category": "HEADBANDS",
+    "img": "https://i.ibb.co/KD6s137/2022-02-02-Dominique-160-copy-360x.webp",
+    "products": [
+      {
+        "id": 9,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 10,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "Category": "Hair Claws & Combs",
+    "img": "https://i.ibb.co/fXhp0NS/XXLClips-Aug23-8-copy-360x.webp",
+    "products": [
+      {
+        "id": 11,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 12,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "Category": "SATIN PILLOWCASES",
+    "img": "https://i.ibb.co/TLQHFHs/1-pillowcase2-720x.webp",
+    "products": [
+      {
+        "id": 13,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 14,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "Category": "TOTE BAGS",
+    "img": "https://i.ibb.co/PznqWSK/XXLTotes-84-copy-360x.webp",
+    "products": [
+      {
+        "id": 15,
+        "productCategory": "Product 3",
+        "image": "https://example.com/product3.jpg",
+        "price": 90
+      },
+      {
+        "id": 16,
+        "productCategory": "Product 4",
+        "image": "https://example.com/product4.jpg",
+        "price": 110
+      }
+    ]
+  }
+]
